@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <circle cx="32" cy="32" r="30" fill="#064E3B"/>
+  <!-- Fresh wave & droplet -->
+  <path d="M16 38C22 30 28 44 36 38C42 33 46 36 48 40" stroke="#84CC16" stroke-width="4" stroke-linecap="round"/>
+  <path d="M32 14C32 14 23 25 23 29C23 33.97 27.03 38 32 38C36.97 38 41 33.97 41 29C41 25 32 14 32 14Z" fill="#84CC16"/>
+  <circle cx="28" cy="26" r="3" fill="#FFFFFF" fill-opacity="0.8"/>
+  <circle cx="44" cy="20" r="3.5" fill="#34D399"/>
+</svg>
