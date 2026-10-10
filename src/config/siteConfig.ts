@@ -36,6 +36,12 @@ export const siteConfig = {
     email: 'freshwavechemicals@gmail.com',
   },
 
+  // Social Media
+  social: {
+    tiktok: 'https://www.tiktok.com/@freshwavedetergents.1',
+    tiktokHandle: '@freshwavedetergents.1',
+  },
+
   // Operating Hours
   hours: {
     weekdays: 'Monday – Friday: 8:00 AM – 6:30 PM',

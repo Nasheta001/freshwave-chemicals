@@ -75,23 +75,23 @@ export const Navbar: React.FC<NavbarProps> = ({ currentTab, setCurrentTab, onOpe
             {/* Logo */}
             <div 
               onClick={() => handleNavClick('home')}
-              className="flex items-center gap-3 cursor-pointer group select-none"
+              className="flex items-center gap-2.5 sm:gap-3 cursor-pointer group select-none min-w-0"
             >
-              <div className="w-13 h-13 sm:w-14 sm:h-14 rounded-full overflow-hidden border-2 border-brand-800 shadow-md group-hover:scale-105 transition-transform bg-white shrink-0 flex items-center justify-center">
+              <div className="w-10 h-10 sm:w-12 sm:h-12 min-w-[40px] min-h-[40px] max-w-[40px] sm:max-w-[48px] max-h-[40px] sm:max-h-[48px] rounded-full overflow-hidden border-2 border-brand-800 shadow-md group-hover:scale-105 transition-transform bg-white shrink-0 flex items-center justify-center aspect-square">
                 <img 
                   src="/images/freshwave-logo.jpg" 
                   alt="FreshWave Chemicals & Detergents Official Logo" 
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-cover rounded-full"
                 />
               </div>
-              <div className="flex flex-col">
-                <span className="font-extrabold text-lg sm:text-xl tracking-tight text-brand-950 flex items-center gap-1.5">
+              <div className="flex flex-col min-w-0">
+                <span className="font-extrabold text-base sm:text-xl tracking-tight text-brand-950 flex items-center gap-1 sm:gap-1.5 truncate">
                   FreshWave
-                  <span className="text-[10px] sm:text-xs font-bold uppercase tracking-wider bg-freshlime-100 text-brand-800 px-1.5 py-0.5 rounded border border-freshlime-300">
+                  <span className="text-[9px] sm:text-xs font-bold uppercase tracking-wider bg-freshlime-100 text-brand-800 px-1 sm:px-1.5 py-0.5 rounded border border-freshlime-300">
                     Mombasa
                   </span>
                 </span>
-                <span className="text-[10px] sm:text-[11px] font-semibold text-slate-500 tracking-wide uppercase">
+                <span className="text-[9px] sm:text-[11px] font-semibold text-slate-500 tracking-wide uppercase truncate">
                   Chemicals & Detergents
                 </span>
               </div>
@@ -223,6 +223,19 @@ export const Navbar: React.FC<NavbarProps> = ({ currentTab, setCurrentTab, onOpe
                 <MessageCircle className="w-5 h-5" />
                 Chat with Bamburi Shop on WhatsApp
               </button>
+
+              <a
+                href={siteConfig.social.tiktok}
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={() => setMobileMenuOpen(false)}
+                className="w-full flex items-center justify-center gap-2 px-4 py-3 rounded-xl bg-slate-900 text-white font-bold shadow-md hover:bg-black transition text-xs"
+              >
+                <svg className="w-4 h-4 fill-current text-white" viewBox="0 0 24 24">
+                  <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64c.29 0 .58.04.85.12V9.4a6.33 6.33 0 0 0-5.74 1.15 6.34 6.34 0 0 0 4.19 11.23c3.5 0 6.34-2.84 6.34-6.34V9.06a8.16 8.16 0 0 0 4.47 1.34V6.95a4.85 4.85 0 0 1-.03-.26h.03z"/>
+                </svg>
+                <span>Tufuate TikTok: {siteConfig.social.tiktokHandle}</span>
+              </a>
             </div>
           </div>
         )}
